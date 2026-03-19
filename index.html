@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AlexFilms | Wedding Videographer Málaga</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500&family=Montserrat:wght@200;300;400&display=swap" rel="stylesheet">
+
+<style>
+
+/* RESET */
+* { margin:0; padding:0; box-sizing:border-box; }
+
+/* COLORS */
+:root {
+  --bg:#f7f5f2;
+  --text:#1a1a1a;
+  --accent:#c6a97b;
+}
+
+body {
+  font-family:'Montserrat', sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.6;
+}
+
+.container {
+  width:90%;
+  max-width:1100px;
+  margin:0 auto;
+}
+
+/* NAV */
+.nav {
+  position:fixed;
+  width:100%;
+  top:0;
+  left:0;
+  display:flex;
+  justify-content:space-between;
+  padding:25px 5%;
+  z-index:1000;
+  background:rgba(0,0,0,0.2);
+  backdrop-filter: blur(6px);
+}
+
+.nav a {
+  text-decoration:none;
+  color:white;
+  margin-left:25px;
+  font-size:12px;
+  letter-spacing:2px;
+}
+
+.logo {
+  color:white;
+  letter-spacing:3px;
+}
+
+/* HERO */
+.hero {
+  position:relative;
+  height:100vh;
+  overflow:hidden;
+}
+
+.hero video {
+  position:absolute;
+  top:50%;
+  left:50%;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  transform:translate(-50%, -50%);
+}
+
+.overlay {
+  position:absolute;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.4);
+}
+
+.hero-content {
+  position:relative;
+  z-index:2;
+  text-align:center;
+  top:50%;
+  transform:translateY(-50%);
+  color:white;
+}
+
+.hero h1 {
+  font-family:'Playfair Display', serif;
+  font-size:64px;
+  font-weight:300;
+  letter-spacing:4px;
+}
+
+.hero p {
+  margin-top:20px;
+  font-size:14px;
+  letter-spacing:1px;
+}
+
+/* BUTTON */
+.btn {
+  display:inline-block;
+  margin-top:30px;
+  padding:12px 30px;
+  border:1px solid var(--accent);
+  color:var(--accent);
+  text-decoration:none;
+  font-size:12px;
+  letter-spacing:2px;
+  transition:0.3s;
+}
+
+.btn:hover {
+  background:var(--accent);
+  color:white;
+}
+
+/* SECTION */
+.section {
+  padding:120px 0;
+  text-align:center;
+}
+
+.section h2 {
+  font-family:'Playfair Display', serif;
+  font-weight:300;
+  margin-bottom:20px;
+}
+
+.section p {
+  max-width:700px;
+  margin:0 auto;
+}
+
+/* GRID */
+.grid {
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:20px;
+  margin-top:40px;
+}
+
+.grid img {
+  width:100%;
+  height:300px;
+  object-fit:cover;
+}
+
+/* FILMS SECTION */
+.films video {
+  width:100%;
+  margin-top:20px;
+}
+
+/* FORM */
+form {
+  max-width:500px;
+  margin:40px auto 0;
+}
+
+input, textarea {
+  width:100%;
+  padding:12px;
+  margin:10px 0;
+  border:1px solid #ddd;
+  background:transparent;
+}
+
+/* FOOTER */
+.footer {
+  text-align:center;
+  padding:60px 0;
+  font-size:12px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<div class="nav">
+  <div class="logo">AlexFilms</div>
+  <div>
+    <a href="#">HOME</a>
+    <a href="#films">FILMS</a>
+    <a href="#about">ABOUT</a>
+    <a href="#contact">CONTACT</a>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <video autoplay muted loop playsinline>
+    <source src="https://pub-fafa1cfd10a84168b854e9b1497b897c.r2.dev/Trailer_Wedding.mp4" type="video/mp4">
+  </video>
+  <div class="overlay"></div>
+
+  <div class="hero-content">
+    <h1>Wedding Videographer in Málaga</h1>
+    <p>Cinematic wedding films on the Costa del Sol</p>
+    <a href="#films" class="btn">WATCH FILMS</a>
+  </div>
+</section>
+
+<!-- FILMS -->
+<section class="section films" id="films">
+  <div class="container">
+    <h2>Featured Wedding Films</h2>
+    <p>A selection of emotional and cinematic wedding stories.</p>
+
+    <video controls poster="">
+      <source src="https://pub-fafa1cfd10a84168b854e9b1497b897c.r2.dev/Trailer_Wedding.mp4" type="video/mp4">
+    </video>
+  </div>
+</section>
+
+<!-- PORTFOLIO -->
+<section class="section">
+  <div class="container">
+    <h2>Moments & Atmosphere</h2>
+    <div class="grid">
+      <img src="https://images.unsplash.com/photo-1529634898452-1f6a9d4e3c4d">
+      <img src="https://images.unsplash.com/photo-1519741497674-611481863552">
+      <img src="https://images.unsplash.com/photo-1502635385003-ee1e6a1a742d">
+      <img src="https://images.unsplash.com/photo-1492707892479-7bc8d5a4ee93">
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section" id="about">
+  <div class="container">
+    <h2>About AlexFilms</h2>
+    <p>
+      I'm Alexander Kagerer, a wedding filmmaker focused on capturing real moments with a cinematic approach.
+      My style blends documentary storytelling with elegant visuals, creating timeless films.
+    </p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section" id="contact">
+  <div class="container">
+    <h2>Check Availability</h2>
+    <p>Let's create something unforgettable together.</p>
+
+    <form>
+      <input type="text" placeholder="Your Name">
+      <input type="email" placeholder="Your Email">
+      <textarea rows="5" placeholder="Tell me about your wedding"></textarea>
+      <button class="btn">SEND MESSAGE</button>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<div class="footer">
+  <p>© 2026 AlexFilms — Wedding Videographer Málaga</p>
+</div>
+
+</body>
+</html>
