@@ -24,20 +24,27 @@ body{font-family:'Montserrat',sans-serif;background:var(--bg);color:var(--text);
 .hero video{position:absolute;top:50%;left:50%;width:100%;height:100%;object-fit:cover;transform:translate(-50%,-50%);} 
 .overlay{position:absolute;width:100%;height:100%;background:rgba(0,0,0,0.45);} 
 .hero-content{position:relative;z-index:2;text-align:center;top:50%;transform:translateY(-50%);color:white;}
-.hero h1{font-family:'Playfair Display',serif;font-size:64px;font-weight:300;letter-spacing:4px;}
-.hero p{margin-top:20px;font-size:14px;letter-spacing:1px;}
+.hero h1{font-family:'Playfair Display',serif;font-size:72px;font-weight:300;letter-spacing:4px;}
+.hero p{margin-top:20px;font-size:15px;letter-spacing:1px;}
 
 .btn{display:inline-block;margin-top:30px;padding:12px 30px;border:1px solid var(--accent);color:var(--accent);text-decoration:none;font-size:12px;letter-spacing:2px;transition:.3s;}
 .btn:hover{background:var(--accent);color:white;}
 
-.section{padding:120px 0;text-align:center;}
-.section h2{font-family:'Playfair Display',serif;font-weight:300;margin-bottom:20px;}
+.section{padding:90px 0;text-align:center;opacity:0;transform:translateY(40px);transition:all 1s ease;}
+.section.visible{opacity:1;transform:translateY(0);}
+.section h2{font-family:'Playfair Display',serif;font-weight:300;margin-bottom:25px;font-size:42px;}
 .section p{max-width:750px;margin:0 auto;}
 
-.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;margin-top:40px;}
-.grid img{width:100%;height:300px;object-fit:cover;}
+/* ABOUT LAYOUT */
+.about-flex{display:flex;align-items:center;gap:40px;text-align:left;}
+.about-flex img{width:100%;max-width:400px;}
 
-.about-img{width:100%;max-width:400px;margin:0 auto 30px;display:block;}
+/* GRID */
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:40px;}
+.grid img{width:100%;height:280px;object-fit:cover;}
+
+/* FILM FIX */
+.films video{width:100%;max-width:800px;margin:30px auto 0;display:block;}
 
 .inline-video{width:100%;max-width:700px;margin:40px auto 0;display:block;}
 
@@ -47,7 +54,13 @@ body{font-family:'Montserrat',sans-serif;background:var(--bg);color:var(--text);
 
 .whatsapp-btn{display:inline-block;margin-top:40px;padding:14px 35px;background:var(--accent);color:white;text-decoration:none;font-size:12px;letter-spacing:2px;}
 
-.footer{text-align:center;padding:60px 0;font-size:12px;}
+.footer{text-align:center;padding:50px 0;font-size:12px;}
+
+@media(max-width:900px){
+  .about-flex{flex-direction:column;text-align:center;}
+  .grid{grid-template-columns:1fr;}
+  .hero h1{font-size:42px;}
+}
 </style>
 </head>
 
@@ -63,7 +76,6 @@ body{font-family:'Montserrat',sans-serif;background:var(--bg);color:var(--text);
   </div>
 </div>
 
-<!-- HERO -->
 <section class="hero">
   <video autoplay muted loop playsinline>
     <source src="https://pub-fafa1cfd10a84168b854e9b1497b897c.r2.dev/herobackground2.mp4" type="video/mp4">
@@ -76,22 +88,22 @@ body{font-family:'Montserrat',sans-serif;background:var(--bg);color:var(--text);
   </div>
 </section>
 
-<!-- ABOUT -->
 <section class="section" id="about">
-  <div class="container">
-    <img src="https://pub-fafa1cfd10a84168b854e9b1497b897c.r2.dev/mepic1.png" class="about-img">
-    <h2>About AlexFilms</h2>
-    <p>
-      AlexFilms by Alexander Kagerer is focused on cinematic storytelling and high-end wedding filmmaking. With a background in editing, music and sound design, each film is carefully crafted to capture real emotion, natural moments and a timeless atmosphere.
-    </p>
-
-    <video class="inline-video" muted loop playsinline preload="none" loading="lazy" onmouseover="this.play()" onmouseout="this.pause()">
-      <source src="https://pub-fafa1cfd10a84168b854e9b1497b897c.r2.dev/mefilm.mp4" type="video/mp4">
-    </video>
+  <div class="container about-flex">
+    <img src="https://pub-fafa1cfd10a84168b854e9b1497b897c.r2.dev/mepic1.png">
+    <div>
+      <h2>About AlexFilms</h2>
+      <p>
+        AlexFilms by Alexander Kagerer is focused on cinematic storytelling and high-end wedding filmmaking. With a background in editing, music and sound design, each film is carefully crafted to capture real emotion, natural moments and a timeless atmosphere.
+      </p>
+    </div>
   </div>
+
+  <video class="inline-video" muted loop playsinline preload="none" loading="lazy" onmouseover="this.play()" onmouseout="this.pause()">
+    <source src="https://pub-fafa1cfd10a84168b854e9b1497b897c.r2.dev/mefilm.mp4" type="video/mp4">
+  </video>
 </section>
 
-<!-- FEATURED FILM -->
 <section class="section films" id="films">
   <div class="container">
     <h2>Featured Wedding Film</h2>
@@ -102,7 +114,6 @@ body{font-family:'Montserrat',sans-serif;background:var(--bg);color:var(--text);
   </div>
 </section>
 
-<!-- MOMENTS 1-4 -->
 <section class="section">
   <div class="container">
     <h2>Moments & Atmosphere</h2>
@@ -115,14 +126,10 @@ body{font-family:'Montserrat',sans-serif;background:var(--bg);color:var(--text);
   </div>
 </section>
 
-<!-- DESTINATION -->
 <section class="section">
   <div class="container">
     <h2>Destination Wedding Filmmaker in Spain</h2>
-    <p>
-      Available for destination weddings across Spain and Europe, AlexFilms creates refined and emotional wedding films for international couples.
-    </p>
-
+    <p>Available for destination weddings across Spain and Europe.</p>
     <div class="grid">
       <img src="https://pub-fafa1cfd10a84168b854e9b1497b897c.r2.dev/wedding5.png">
       <img src="https://pub-fafa1cfd10a84168b854e9b1497b897c.r2.dev/wedding6.png">
@@ -130,18 +137,14 @@ body{font-family:'Montserrat',sans-serif;background:var(--bg);color:var(--text);
   </div>
 </section>
 
-<!-- MALAGA SECTION -->
 <section class="section">
   <div class="container">
     <h2>Wedding Videographer Málaga & Costa del Sol</h2>
-    <p>
-      Based in Málaga, filming across the Costa del Sol including Marbella, Estepona and Nerja, creating cinematic and emotional wedding films.
-    </p>
-    <img src="https://pub-fafa1cfd10a84168b854e9b1497b897c.r2.dev/CinematicMalaga.png" class="about-img">
+    <p>Based in Málaga, filming across the Costa del Sol including Marbella, Estepona and Nerja.</p>
+    <img src="https://pub-fafa1cfd10a84168b854e9b1497b897c.r2.dev/CinematicMalaga.png" style="margin-top:30px;max-width:700px;width:100%;">
   </div>
 </section>
 
-<!-- SOCIAL -->
 <section class="section">
   <div class="container">
     <h2>Follow & Connect</h2>
@@ -154,7 +157,6 @@ body{font-family:'Montserrat',sans-serif;background:var(--bg);color:var(--text);
   </div>
 </section>
 
-<!-- CONTACT -->
 <section class="section" id="contact">
   <div class="container">
     <h2>Check Availability</h2>
@@ -165,6 +167,18 @@ body{font-family:'Montserrat',sans-serif;background:var(--bg);color:var(--text);
 <div class="footer">
   <p>© 2026 AlexFilms — Wedding Videographer Málaga</p>
 </div>
+
+<script>
+const sections=document.querySelectorAll('.section');
+const observer=new IntersectionObserver(entries=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){
+      entry.target.classList.add('visible');
+    }
+  });
+},{threshold:0.2});
+sections.forEach(sec=>observer.observe(sec));
+</script>
 
 </body>
 </html>
