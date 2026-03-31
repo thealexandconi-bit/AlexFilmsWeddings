@@ -37,50 +37,27 @@ body{font-family:'Montserrat',sans-serif;background:var(--bg);color:var(--text);
 .section h2{font-family:'Playfair Display',serif;font-weight:300;margin-bottom:25px;font-size:46px;}
 .section p{max-width:750px;margin:0 auto;}
 
-.about-flex{
-  display:flex;
-  align-items:flex-start;
-  gap:60px;
-  text-align:left;
-}
+.about-flex{display:flex;align-items:center;gap:50px;text-align:left;}
+.about-flex img{width:100%;max-width:420px;border-radius:6px;}
 
-.about-flex img{
-  width:100%;
-  max-width:480px;
-  border-radius:6px;
-  margin-top:20px;
-}
-
-/* GRID */
+/* GRID FIXED */
 .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;margin-top:40px;justify-content:center;}
-.grid img{
-  width:100%;
-  height:300px;
-  object-fit:cover;
-  object-position:center top;
-  border-radius:4px;
-  transition:transform .5s ease;
+.grid img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 4px;
+  transition: transform .5s ease;
 }
-.grid img:hover{transform:scale(1.03);}
+.grid img:hover{transform:scale(1.03);} 
 
+/* CENTER SMALL GRID */
 .grid.small{max-width:600px;margin:40px auto 0;}
 
-.films video{
-  width:100%;
-  max-width:800px;
-  margin:30px auto 0;
-  display:block;
-  border-radius:6px;
-}
+.films video{width:100%;max-width:800px;margin:30px auto 0;display:block;border-radius:6px;}
 
-.inline-video{
-  width:100%;
-  max-width:700px;
-  margin:70px auto 20px;
-  display:block;
-  border-radius:6px;
-  box-shadow:0 20px 60px rgba(0,0,0,0.15);
-}
+.inline-video{width:100%;max-width:700px;margin:40px auto 0;display:block;border-radius:6px;}
 
 .socials{display:flex;justify-content:center;gap:20px;margin-top:30px;flex-wrap:wrap;}
 .socials a{padding:12px 25px;border:1px solid var(--accent);color:var(--accent);text-decoration:none;font-size:12px;letter-spacing:2px;transition:.3s;}
@@ -129,7 +106,7 @@ body{font-family:'Montserrat',sans-serif;background:var(--bg);color:var(--text);
     <div>
       <h2>About AlexFilms</h2>
       <p>
-I’m Alexander Kagerer, the filmmaker behind AlexFilms, based in Málaga in southern Spain, working with couples who value a natural and cinematic approach.
+        I’m Alexander Kagerer, the filmmaker behind AlexFilms, based in Málaga in southern Spain, working with couples who value a natural and cinematic approach.
 
 Rather than staged or overly directed footage, I focus on real interactions, subtle moments and the overall atmosphere of the day. Each film is edited with careful attention to pacing, music and sound, creating something that feels immersive and personal rather than traditional.
 
@@ -154,22 +131,95 @@ Alongside ground cinematography, I offer aerial coverage with professional drone
 <section class="section films" id="films">
   <div class="container">
     <h2>Featured Wedding Film</h2>
-    <p>
-A short wedding trailer filmed in Málaga, capturing the atmosphere, location and energy of the day.
+    <p>A short wedding trailer filmed in Málaga, capturing the atmosphere, location and energy of the day.
 
 Working as a wedding videographer in Málaga, Marbella and across the Costa del Sol, the focus is on creating cinematic wedding videos that feel natural, engaging and true to each couple.
 
 Using 4K cinematography, professional audio and a storytelling-driven approach, every film is crafted with attention to detail and flow.
 
-Filming weddings across Málaga city and the surrounding areas, including beach venues and luxury wedding locations, allows for a versatile and visually strong result in different environments. This approach is ideal for couples looking for a wedding videographer in Spain who delivers high-quality, modern wedding films with a consistent style.
-    </p>
+Filming weddings across Málaga city and the surrounding areas, including beach venues and luxury wedding locations, allows for a versatile and visually strong result in different environments. This approach is ideal for couples looking for a wedding videographer in Spain who delivers high-quality, modern wedding films with a consistent style.</p>
     <video controls>
       <source src="https://pub-fafa1cfd10a84168b854e9b1497b897c.r2.dev/Trailer_Wedding.mp4" type="video/mp4">
     </video>
   </div>
 </section>
 
-<!-- rest unchanged -->
+<section class="section">
+  <div class="container">
+    <h2>Moments & Atmosphere</h2>
+    <div class="grid">
+      <img src="https://pub-fafa1cfd10a84168b854e9b1497b897c.r2.dev/imagewebsite2.webp">
+      <img src="https://pub-fafa1cfd10a84168b854e9b1497b897c.r2.dev/imagewebsite13.webp"style="object-position: center center;">
+      <img src="https://pub-fafa1cfd10a84168b854e9b1497b897c.r2.dev/imagewebsite12.webp"style="object-position: center 15%;">
+      <img src="https://pub-fafa1cfd10a84168b854e9b1497b897c.r2.dev/imagewebsite9.webp">
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2>Destination Wedding Filmmaker in Spain</h2>
+    <p>Available for destination weddings across Spain and Europe, with a strong focus on Andalucía, covering a wide range of wedding venues in Málaga, Spain and throughout the Costa del Sol region.
+
+Regular work includes filming at Málaga Spain wedding venues, coastal locations and private estates, as well as traveling for weddings in surrounding areas where a consistent approach to wedding video production is required.
+
+Open for travel, projects can be adapted to different timelines, locations and event structures, while maintaining a cinematic style suited for modern wedding videography in Spain.</p>
+    <div class="grid small">
+      <img src="https://pub-fafa1cfd10a84168b854e9b1497b897c.r2.dev/imagewebsite5.webp">
+      <img src="https://pub-fafa1cfd10a84168b854e9b1497b897c.r2.dev/imagewebsite14.webp">
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2>Wedding Videographer Málaga & Costa del Sol</h2>
+    <p>Filming weddings across the Costa del Sol, including Marbella, Estepona and Nerja, with experience covering a wide range of wedding venues in Málaga, Spain — from beachfront ceremonies to private villas and larger event locations.
+
+Each setting brings different lighting, timing and logistical challenges, requiring a flexible approach to maintain a consistent visual style throughout the wedding day. This includes both established Málaga wedding venues and more unique locations across the region.
+
+As a videographer in Málaga, the focus is on delivering high-quality wedding video production that reflects the location, atmosphere and structure of each wedding, whether in the city, along the coast or in more remote areas.</p>
+    <div class="grid small">
+      <img src="https://pub-fafa1cfd10a84168b854e9b1497b897c.r2.dev/imagewebsite3.webp">
+      <img src="https://pub-fafa1cfd10a84168b854e9b1497b897c.r2.dev/imagewebsite7.webp"style="object-position: center 30%;">
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2>Follow & Connect</h2>
+    <div class="socials">
+      <a href="https://www.instagram.com/alex_films_malaga/" target="_blank">Instagram</a>
+      <a href="https://www.facebook.com/profile.php?id=61578445648378" target="_blank">Facebook</a>
+      <a href="https://www.youtube.com/channel/UCEi2ysMye8OYCTKDc1tpmRA" target="_blank">YouTube</a>
+      <a href="https://wa.me/34624546805" target="_blank">WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="contact">
+  <div class="container">
+    <h2>Check Availability</h2>
+    <a href="https://wa.me/34624546805?text=Hey%20Alex,%20I’d%20love%20to%20ask%20for%20a%20wedding%20film.%20Our%20wedding%20is%20in" class="whatsapp-btn" target="_blank">MESSAGE ON WHATSAPP</a>
+  </div>
+</section>
+
+<div class="footer">
+  <p>© 2026 AlexFilms — Wedding Videographer Málaga</p>
+</div>
+
+<script>
+const sections=document.querySelectorAll('.section');
+const observer=new IntersectionObserver(entries=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){
+      entry.target.classList.add('visible');
+    }
+  });
+},{threshold:0.15});
+sections.forEach(sec=>observer.observe(sec));
+</script>
 
 </body>
 </html>
