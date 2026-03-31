@@ -96,6 +96,26 @@ body{font-family:'Montserrat',sans-serif;background:var(--bg);color:var(--text);
   .grid{grid-template-columns:1fr;}
   .hero h1{font-size:42px;}
 }
+
+.video-wrapper{
+  position:relative;
+  width:100%;
+  max-width:700px;
+  margin:70px auto 20px;
+  border-radius:6px;
+  overflow:hidden;
+  box-shadow:0 20px 60px rgba(0,0,0,0.15);
+  padding-top:56.25%; /* 16:9 ratio */
+}
+
+.video-wrapper iframe{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+}
+
 </style>
 </head>
 
@@ -138,17 +158,16 @@ Alongside ground cinematography, I offer aerial coverage with professional drone
     </div>
   </div>
 
-<video 
-  class="inline-video"
-  autoplay 
-  muted 
-  loop 
-  playsinline 
-  preload="auto"
-  poster="https://pub-fafa1cfd10a84168b854e9b1497b897c.r2.dev/imagewebsite5.webp"
->
-  <source src="https://pub-fafa1cfd10a84168b854e9b1497b897c.r2.dev/mefilm.mp4" type="video/mp4">
-</video>
+<div class="video-wrapper">
+  <iframe 
+    id="yt-video"
+    src="https://www.youtube.com/embed/ebg8tDTMTjM?enablejsapi=1&mute=1&controls=0&rel=0&playsinline=1"
+    frameborder="0"
+    allow="autoplay; encrypted-media"
+    allowfullscreen>
+  </iframe>
+</div>
+
 </section>
 
 <section class="section films" id="films">
@@ -242,6 +261,21 @@ const observer=new IntersectionObserver(entries=>{
   });
 },{threshold:0.15});
 sections.forEach(sec=>observer.observe(sec));
+
+const ytVideo = document.getElementById('yt-video');
+
+const videoObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting){
+      if(!ytVideo.src.includes("autoplay")){
+        ytVideo.src += "&autoplay=1";
+      }
+    }
+  });
+}, { threshold: 0.5 });
+
+videoObserver.observe(ytVideo);
+
 </script>
 
 </body>
