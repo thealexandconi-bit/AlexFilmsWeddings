@@ -39,16 +39,17 @@ body{font-family:'Montserrat',sans-serif;background:var(--bg);color:var(--text);
 
 .about-flex{
   display:flex;
-  align-items:flex-start;
+  align-items:stretch; /* key change */
   gap:60px;
   text-align:left;
 }
 
 .about-flex img{
   width:100%;
-  max-width:480px;
+  max-width:520px; /* bigger */
+  height:100%;
+  object-fit:cover;
   border-radius:6px;
-  margin-top:20px;
 }
 
 /* GRID FIXED */
