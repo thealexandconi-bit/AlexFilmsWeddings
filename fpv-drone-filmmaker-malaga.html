@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NW4MXZQCBJ"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-NW4MXZQCBJ');
+</script>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#c6a97b">
+
+<title>FPV Drone Filmmaker Málaga | Cinematic Drone Videography Costa del Sol</title>
+<meta name="description" content="Cinematic FPV drone filmmaker in Málaga creating immersive aerial videography, FPV fly-throughs and high-end cinematic drone films across Costa del Sol, Marbella, Nerja and Spain.">
+<link rel="canonical" href="https://alex-films.com/fpv-drone-filmmaker-malaga">
+
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500&family=Montserrat:wght@200;300;400&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+:root{
+--bg:#f7f5f2;
+--dark:#111111;
+--text:#1a1a1a;
+--accent:#c6a97b;
+--light:#fdfcf9;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Montserrat',sans-serif;
+background:var(--bg);
+color:var(--text);
+line-height:1.7;
+overflow-x:hidden;
+}
+
+.container{
+width:90%;
+max-width:1180px;
+margin:0 auto;
+}
+
+.nav{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:25px 5%;
+z-index:1000;
+background:rgba(0,0,0,0.25);
+backdrop-filter:blur(12px);
+transition:0.3s;
+}
+
+.nav.scrolled{
+background:rgba(0,0,0,0.75);
+}
+
+.logo{
+color:white;
+text-decoration:none;
+font-size:20px;
+letter-spacing:3px;
+font-family:'Playfair Display',serif;
+}
+
+.nav-links{
+display:flex;
+gap:28px;
+}
+
+.nav-links a{
+color:white;
+text-decoration:none;
+font-size:11px;
+letter-spacing:2px;
+transition:0.3s;
+}
+
+.nav-links a:hover{
+color:var(--accent);
+}
+
+.hero{
+position:relative;
+height:100vh;
+overflow:hidden;
+}
+
+.hero video{
+position:absolute;
+top:50%;
+left:50%;
+width:100%;
+height:100%;
+object-fit:cover;
+transform:translate(-50%,-50%);
+}
+
+.overlay{
+position:absolute;
+width:100%;
+height:100%;
+background:linear-gradient(to bottom, rgba(0,0,0,0.35), rgba(0,0,0,0.75));
+}
+
+.hero-content{
+position:relative;
+z-index:2;
+height:100%;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+padding:0 20px;
+}
+
+.hero-content h1{
+font-family:'Playfair Display',serif;
+font-size:72px;
+font-weight:300;
+letter-spacing:3px;
+max-width:900px;
+line-height:1.1;
+}
+
+.hero-content p{
+margin-top:25px;
+max-width:720px;
+font-size:15px;
+letter-spacing:1px;
+color:rgba(255,255,255,0.85);
+}
+
+.hero-buttons{
+display:flex;
+gap:18px;
+margin-top:40px;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.btn{
+display:inline-block;
+padding:14px 34px;
+text-decoration:none;
+font-size:11px;
+letter-spacing:2px;
+transition:0.3s;
+}
+
+.btn-primary{
+background:var(--accent);
+color:white;
+}
+
+.btn-primary:hover{
+opacity:0.9;
+}
+
+.btn-outline{
+border:1px solid rgba(255,255,255,0.5);
+color:white;
+}
+
+.btn-outline:hover{
+background:white;
+color:black;
+}
+
+.section{
+padding:110px 0;
+}
+
+.section-dark{
+background:var(--dark);
+color:white;
+}
+
+.section h2{
+font-family:'Playfair Display',serif;
+font-size:52px;
+font-weight:300;
+margin-bottom:30px;
+line-height:1.2;
+}
+
+.section p{
+max-width:850px;
+font-size:15px;
+color:#555;
+}
+
+.section-dark p{
+color:rgba(255,255,255,0.7);
+}
+
+.section-label{
+font-size:11px;
+letter-spacing:4px;
+text-transform:uppercase;
+color:var(--accent);
+display:block;
+margin-bottom:20px;
+}
+
+.video-wrapper{
+width:100%;
+max-width:950px;
+margin:50px auto 0;
+border-radius:8px;
+overflow:hidden;
+box-shadow:0 20px 60px rgba(0,0,0,0.3);
+}
+
+.video-wrapper iframe{
+width:100%;
+height:540px;
+border:0;
+display:block;
+}
+
+.services-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:35px;
+margin-top:60px;
+}
+
+.service-card{
+background:white;
+padding:45px;
+border-radius:8px;
+transition:0.3s;
+}
+
+.service-card:hover{
+transform:translateY(-4px);
+}
+
+.service-card h3{
+font-family:'Playfair Display',serif;
+font-size:32px;
+font-weight:300;
+margin-bottom:20px;
+line-height:1.2;
+}
+
+.service-card p{
+font-size:14px;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:20px;
+margin-top:50px;
+}
+
+.gallery img{
+width:100%;
+height:420px;
+object-fit:cover;
+border-radius:6px;
+transition:0.4s;
+}
+
+.gallery img:hover{
+transform:scale(1.02);
+}
+
+.cta-section{
+text-align:center;
+background:var(--dark);
+color:white;
+}
+
+.cta-section p{
+margin:0 auto;
+color:rgba(255,255,255,0.75);
+}
+
+.socials{
+display:flex;
+justify-content:center;
+gap:18px;
+margin-top:35px;
+flex-wrap:wrap;
+}
+
+.socials a{
+text-decoration:none;
+color:var(--accent);
+border:1px solid var(--accent);
+padding:12px 24px;
+font-size:11px;
+letter-spacing:2px;
+transition:0.3s;
+}
+
+.socials a:hover{
+background:var(--accent);
+color:white;
+}
+
+.footer{
+background:black;
+color:rgba(255,255,255,0.5);
+text-align:center;
+padding:40px 0;
+font-size:12px;
+}
+
+.reveal{
+opacity:0;
+transform:translateY(50px);
+transition:1.1s cubic-bezier(.19,1,.22,1);
+}
+
+.reveal.visible{
+opacity:1;
+transform:translateY(0);
+}
+
+@media(max-width:900px){
+
+.hero-content h1{
+font-size:44px;
+}
+
+.section h2{
+font-size:38px;
+}
+
+.services-grid{
+grid-template-columns:1fr;
+}
+
+.gallery{
+grid-template-columns:1fr;
+}
+
+.video-wrapper iframe{
+height:280px;
+}
+
+.nav-links{
+display:none;
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<nav class="nav" id="navbar">
+<a href="/" class="logo">AlexFilms</a>
+
+<div class="nav-links">
+<a href="/">HOME</a>
+<a href="#reel">REEL</a>
+<a href="#services">SERVICES</a>
+<a href="#gallery">GALLERY</a>
+<a href="#contact">CONTACT</a>
+</div>
+</nav>
+
+<section class="hero">
+<video autoplay muted loop playsinline preload="auto">
+<source src="https://pub-46816b9fcf1445efbe847da23ac5d27e.r2.dev/background.mp4" type="video/mp4">
+</video>
+
+<div class="overlay"></div>
+
+<div class="hero-content">
+<h1>FPV Drone Filmmaker in Málaga & Costa del Sol</h1>
+
+<p>
+Cinematic FPV drone videography and aerial filmmaking for brands, music videos, luxury venues, events and creative productions across Spain.
+</p>
+
+<div class="hero-buttons">
+<a href="#reel" class="btn btn-primary">WATCH FPV REEL</a>
+<a href="#contact" class="btn btn-outline">CHECK AVAILABILITY</a>
+</div>
+</div>
+</section>
+
+<section class="section reveal">
+<div class="container">
+
+<span class="section-label">Cinematic FPV Videography</span>
+
+<h2>Cinematic FPV & Drone Videography in Málaga</h2>
+
+<p>
+FPV drone filmmaking allows for immersive and dynamic camera movement that goes beyond traditional aerial videography. Based in Málaga and working across the Costa del Sol, AlexFilms creates cinematic FPV drone videos designed to capture movement, atmosphere and scale in a more engaging and modern way.
+<br><br>
+From luxury villas and hotels to music videos, events and commercial productions, FPV drones make it possible to move naturally through spaces, follow motion smoothly and create perspectives that are difficult to achieve with conventional filming techniques.
+<br><br>
+Alongside FPV flying, professional cinematic drones are used for high-end aerial shots, establishing sequences and landscape cinematography — combining technical precision with storytelling-driven filmmaking.
+</p>
+
+</div>
+</section>
+
+<section class="section section-dark reveal" id="reel">
+<div class="container" style="text-align:center;">
+
+<span class="section-label">FPV Showreel</span>
+
+<h2>FPV Drone Reel</h2>
+
+<p style="margin:0 auto;">
+A collection of cinematic FPV flights, aerial cinematography and dynamic drone sequences filmed across Spain, Southeast Asia and Europe.
+</p>
+
+<div class="video-wrapper">
+<iframe
+src="https://www.youtube.com/embed/ebg8tDTMTjM?autoplay=0&mute=1&rel=0"
+allowfullscreen>
+</iframe>
+</div>
+
+</div>
+</section>
+
+<section class="section reveal" id="services">
+<div class="container">
+
+<span class="section-label">Services</span>
+
+<h2>FPV Drone Filming Services</h2>
+
+<div class="services-grid">
+
+<div class="service-card">
+<h3>Luxury Real Estate & Villas</h3>
+<p>
+FPV fly-throughs for luxury properties, hotels, villas and Airbnb spaces across Málaga, Marbella and the Costa del Sol — designed to showcase architecture, atmosphere and location in a cinematic way.
+</p>
+</div>
+
+<div class="service-card">
+<h3>Music Videos & Creative Productions</h3>
+<p>
+Dynamic FPV sequences and cinematic drone cinematography for artists, music videos and creative campaigns with a strong visual identity and movement-focused storytelling.
+</p>
+</div>
+
+<div class="service-card">
+<h3>Events & Destination Productions</h3>
+<p>
+Aerial and FPV filming for events, festivals and destination productions requiring immersive movement, cinematic establishing shots and modern visual storytelling.
+</p>
+</div>
+
+<div class="service-card">
+<h3>Tourism & Commercial Content</h3>
+<p>
+Drone cinematography and FPV visuals for tourism campaigns, travel content, restaurants, brands and businesses looking for high-end cinematic visuals optimized for modern digital platforms.
+</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<section class="section section-dark reveal">
+<div class="container">
+
+<span class="section-label">Storytelling Approach</span>
+
+<h2>A Cinematic Approach to FPV Filmmaking</h2>
+
+<p>
+Rather than relying only on technical drone movements, the focus is placed on rhythm, pacing, composition and storytelling.
+<br><br>
+Years of travel filmmaking and cinematic video production across different countries and environments have shaped an approach that combines spontaneous movement with carefully crafted editing and sound design.
+<br><br>
+Every FPV sequence is integrated into the overall atmosphere of the film — creating visuals that feel immersive, cinematic and emotionally engaging rather than purely technical.
+<br><br>
+This combination of cinematic editing, drone cinematography and natural movement is especially effective for modern commercial productions, music videos and visually driven storytelling.
+</p>
+
+</div>
+</section>
+
+<section class="section reveal" id="gallery">
+<div class="container">
+
+<span class="section-label">Gallery</span>
+
+<h2>FPV & Drone Cinematography</h2>
+
+<div class="gallery">
+<img src="https://pub-46816b9fcf1445efbe847da23ac5d27e.r2.dev/fpvsubpage1.webp" alt="FPV drone filmmaker Málaga cinematic aerial shot">
+
+<img src="https://pub-46816b9fcf1445efbe847da23ac5d27e.r2.dev/fpvsubpage2.webp" alt="Cinematic FPV drone videography Costa del Sol">
+
+<img src="https://pub-46816b9fcf1445efbe847da23ac5d27e.r2.dev/fpvsubpage3.webp" alt="FPV drone cinematography Spain luxury villa shot">
+
+<img src="https://pub-46816b9fcf1445efbe847da23ac5d27e.r2.dev/fpvsubpage4.webp" alt="Professional drone filmmaker Málaga cinematic visuals">
+
+<img src="https://pub-46816b9fcf1445efbe847da23ac5d27e.r2.dev/fpvsubpage5.webp" alt="FPV aerial filmmaking Marbella and Costa del Sol">
+
+<img src="https://pub-46816b9fcf1445efbe847da23ac5d27e.r2.dev/fpvsubpage1.webp" alt="High-end FPV drone video production Spain">
+</div>
+
+</div>
+</section>
+
+<section class="section reveal">
+<div class="container">
+
+<span class="section-label">Coverage Areas</span>
+
+<h2>FPV Drone Filming Across Málaga & Spain</h2>
+
+<p>
+Based in Málaga in southern Spain, AlexFilms provides FPV drone filming and cinematic aerial videography across the Costa del Sol, including Marbella, Estepona and Nerja.
+<br><br>
+Available for travel throughout Spain and Europe for commercial productions, music videos, tourism campaigns, luxury real estate projects and destination events.
+</p>
+
+</div>
+</section>
+
+<section class="section cta-section reveal" id="contact">
+<div class="container">
+
+<span class="section-label">Contact</span>
+
+<h2>Let’s Create Something Cinematic</h2>
+
+<p>
+Available for FPV drone productions, aerial videography, commercial filmmaking and creative projects across Málaga, Costa del Sol and Europe.
+</p>
+
+<div class="hero-buttons">
+<a href="https://wa.me/34624546805?text=Hey%20Alex,%20I%20would%20love%20to%20ask%20about%20an%20FPV%20drone%20project." target="_blank" class="btn btn-primary">MESSAGE ON WHATSAPP</a>
+</div>
+
+<div class="socials">
+<a href="https://www.instagram.com/alex_films_malaga/" target="_blank">Instagram</a>
+<a href="https://www.youtube.com/channel/UCEi2ysMye8OYCTKDc1tpmRA" target="_blank">YouTube</a>
+<a href="/">Wedding Films</a>
+</div>
+
+</div>
+</section>
+
+<div class="footer">
+<p>© 2026 AlexFilms — FPV Drone Filmmaker Málaga</p>
+</div>
+
+<script>
+
+const navbar = document.getElementById('navbar');
+
+window.addEventListener('scroll', () => {
+if(window.scrollY > 60){
+navbar.classList.add('scrolled');
+}else{
+navbar.classList.remove('scrolled');
+}
+});
+
+const reveals = document.querySelectorAll('.reveal');
+
+const observer = new IntersectionObserver(entries => {
+entries.forEach(entry => {
+if(entry.isIntersecting){
+entry.target.classList.add('visible');
+}
+});
+},{ threshold:0.15 });
+
+reveals.forEach(el => observer.observe(el));
+
+</script>
+
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "ProfessionalService",
+"name": "AlexFilms FPV Drone Filmmaker Málaga",
+"image": "https://pub-fafa1cfd10a84168b854e9b1497b897c.r2.dev/imagewebsite13.webp",
+"url": "https://alex-films.com/fpv-drone-filmmaker-malaga",
+"telephone": "+34624546805",
+"address": {
+"@type": "PostalAddress",
+"addressLocality": "Málaga",
+"addressCountry": "ES"
+},
+"areaServed": [
+"Málaga",
+"Marbella",
+"Estepona",
+"Nerja",
+"Costa del Sol"
+],
+"sameAs": [
+"https://www.instagram.com/alex_films_malaga/",
+"https://www.youtube.com/@alexandconi"
+]
+}
+</script>
+
+</body>
+</html>
